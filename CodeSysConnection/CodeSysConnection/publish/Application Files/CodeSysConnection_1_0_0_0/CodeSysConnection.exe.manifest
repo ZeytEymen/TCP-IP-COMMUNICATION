@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="CodeSysConnection.exe" version="1.0.0.0" publicKeyToken="d031fff864510071" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="CodeSysConnection" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="CodeSysConnection.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Bildirim Seçenekleri
+          Windows Kullanıcı Hesabı Denetim düzeyini değiştirmek istiyorsanız 
+          requestedExecutionLevel düğümünü aşağıdakilerden biriyle değiştirin.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+
+         Geriye dönük uyumluluk için Dosya ve Kayıt Defteri Sanallaştırması’nı 
+         kullanmak istiyorsanız requestedExecutionLevel düğümünü silin.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CodeSysConnection.exe" size="28600">
+      <assemblyIdentity name="CodeSysConnection" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BLUT2cnTx1qJtRBHejqR6eL/q0uJzJwIAMqxEO7VlY0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CodesysNetVars.dll" size="16384">
+      <assemblyIdentity name="CodesysNetVars" version="1.0.5588.37795" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BbYvHIwisZgnly3tGI+AGhqxU5MpxKVUPThpcxIJiSc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EasyModbus.dll" size="72704">
+      <assemblyIdentity name="EasyModbus" version="5.6.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>g7ytCCXKURJAzL2Q95+qB7wm/Pb7GvU7c13A5115X4k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CodeSysConnection.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=FABDATA\lenovo" issuerKeyHash="e5e9bd46be9616295c05b5f58d1f42c1e949de74" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Vt7SrfUxhi1Tp0Cl2+Es1L4i3BHGaPtiZYieSrCtU+k=</DigestValue></Reference></SignedInfo><SignatureValue>P/gk0e+Awjcqr3mJWDBdv7XFtWZzDwkP9cC06EAFMfmmb8vIdbsaYpuNhmkimCbzLRBvN8kyb0ST5IujoUyfa9TS4VdInxmLY3MNbJE0tpvabviBLBUChmGUoDhnK7gphrl8htULskp0COTaxbhIv9g/srvuJstOZgE+GW4lOAU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>r3AiCMF7EZhvNBrqPY9hpmUmj0+8rnVOphklY9dUlNKUT2Er/FOj3b1vNUutoBybNU4axZLwglURdygjgV8uhemMm5WW+yd4tL2lBWf/eEyGyWblRkXE9lhHsRrrkZ+lK6kHLe94SuITHlSLwyAsXh1RXFTGNDsZ31tOuCg0oM0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e953adb04a9e886562fb68c611dc22bed42ce1dba540a7532d8631f5add2de56" Description="" Url=""><as:assemblyIdentity name="CodeSysConnection.exe" version="1.0.0.0" publicKeyToken="d031fff864510071" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=FABDATA\lenovo</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>eScHE10N4/wiLMJPv8+sa/nfR8zVZE6i45uOtlXVvBM=</DigestValue></Reference></SignedInfo><SignatureValue>irwGkj5wdKQ/Os7/vo1V9+PR9aShjAce9YEjBxs+Mg7bhLPUE+M/HAuOeFpkoIQdwssHQ0gnucZCzpNzXPeiJ+bprS2leBhKHLDeAJEa99j/UWXKRzxrhi2/ccI7mGDDmOAdZCc6+e7bQqqhCfQunHSS6mp7e/NmrK6/boNDKKI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>r3AiCMF7EZhvNBrqPY9hpmUmj0+8rnVOphklY9dUlNKUT2Er/FOj3b1vNUutoBybNU4axZLwglURdygjgV8uhemMm5WW+yd4tL2lBWf/eEyGyWblRkXE9lhHsRrrkZ+lK6kHLe94SuITHlSLwyAsXh1RXFTGNDsZ31tOuCg0oM0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQZQl9ZKI2wp1AAk6D+6l2/TANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwARgBBAEIARABBAFQAQQBcAGwAZQBuAG8AdgBvMB4XDTIyMTEzMDEyNDMyOFoXDTIzMTEzMDE4NDMyOFowJzElMCMGA1UEAx4cAEYAQQBCAEQAQQBUAEEAXABsAGUAbgBvAHYAbzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAr3AiCMF7EZhvNBrqPY9hpmUmj0+8rnVOphklY9dUlNKUT2Er/FOj3b1vNUutoBybNU4axZLwglURdygjgV8uhemMm5WW+yd4tL2lBWf/eEyGyWblRkXE9lhHsRrrkZ+lK6kHLe94SuITHlSLwyAsXh1RXFTGNDsZ31tOuCg0oM0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQBTMt1baeiROA+dGr/rjwdrjHkBzAG1sfL/ZuzKPsK9gzpYMcfeJq6vl6nHIg9GAtU34DpQ/vggwFtb7xZSkV9UMMHM44nx/ULH99nDNLBybuoloX5dBxU/9TSV3fRQkkLQiUkvtI1KgxobpE4EnvHO6w2HyvpIvEqdWXK2tMvhhA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
