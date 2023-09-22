@@ -1,2 +1,2 @@
 # TCP-IP-COMMUNICATION
-C# Winform ile oluşturduğum, Codesys Üzerinden TCP/IP haberleşme programı
+TCP/IP communication program via Codesys that I created with C# Winform
